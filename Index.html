@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btnnav{
+    border-radius: 10%;
+    margin-left: 10px;
+    height: 30px;
+    width:130px;
+    color: black;
+}
+
+.btnnav:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.btnfooter{
+    margin-left: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(255, 237, 158);
+    color: rgb(236, 107, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.btnfooter:hover{
+    background-color: cornsilk;
+    color: rgb(241, 227, 101);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    border: 1px cornsilk;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* o @media serve para alterar as propriedades das tags com base no tamanho do dispositivo para
+garantir a reponsividadde do site, temos que verificar como fica a estilização em varios 
+tamanhos de telas diferentes, pode ser que no compuatador fique ok, porem quando acessado
+pelo celular o site quebre. Nese caso será necessario aplicar ajustes no tamanho de tela 
+com o @media()
+
+*Usamos o !important para força a estilização em uma tag, como a tag pode ter id e varias classes o htmls e css precisam saber qual estilo aplicar, 
+forçamos isso quando o !important no final do atributo.
+*/
+
+@media(max-width:750px){
+    button{
+        width: 50px!important;
+        height: 30px!important;
+    }
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <!--
+    Semantica: é a parte linguistica que estuda o significado e sentidos das palavras!
+    A partir da versão 5 do HTML, surgiram as tags semanticas que descrevem o significado das parte 
+    do seu site para o navegador e outros desenvolvedores entendem!
+    -->
+
+
+<header style="background-color: rgb(255, 232, 101);height: 10vh; display: flex;align-items: center;justify-content: center;"> <!-- Cabeçalho da pagina-->
+    <nav style="display: flex;align-items: center;justify-content: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8o9KMeLyYo2FZ_Wp55pu9jF5sEELDtHyio9mkVLG_Q&s=10" alt="" height="80px" width="90px">
+        <a href=""><button class="btnnav">Home</button></a>
+        <a href=""><button class="btnnav">Sobre nós</button></a>
+        <a href=""><button class="btnnav">Tabalhe conosco</button></a>
+    </nav>
+
+</header>
+
+<main style="background-color: rgb(253, 180, 85); height: 70vh;"> <!-- Conteudo principal, é onde irão as informações do site em si-->
+
+<section style="background-color: rgb(255, 201, 53); height: 40%;
+display: flex;justify-content: center;align-items: center;flex-direction:column;text-align: center;"> <!-- Section, é uma sessão da pagina aonde voçê pode colocar um conteudo 
+    Voçê pode separar seu site em varias sessões-->
+    <h1 style="color: orange;"> Laranjinho - briquedos</h1>
+    <hr>
+    <br>
+    <p style="color: black;">🍊 Laranjinha da Moranguinho 🍊
+        <br>
+
+Um cantinho cheio de diversão, 
+carinho e magia! Aqui você encontra brinquedos especiais para deixar a infância ainda mais alegre. 
+Venha conhecer nossa loja e escolher o brinquedo perfeito! 🧸🎀✨
+
+    </p>
+
+</section>
+
+<section style="background-color: rgb(253, 180, 85); height: 20vh; display: flex;">
+    <div style="width: 50%; height: 100%; background-color: rgb(253, 180, 85);">
+
+        <div class="card">
+            <h4> Boneca 🍊 </h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEQVQ8yUOGL3lAjsrI4TnY7ODtB25fGne31tm3m8hFQQ&s=10" alt="" height="80%;" width="40%;">
+            <p> $ 59,99</p>
+            
+
+        </div>
+<div style="width: 50%; height: 100%; background-color: rgb(253, 180, 85);">
+
+<div class="card">
+            <h4> Chocolate nostalgico da🍊</h4> 
+            <img src="https://kopenhagen21.vtexassets.com/arquivos/ids/170226/Kopenhagen-Linha-Tablete-Laranjinha_1000x1000.png?v=638931904508200000" alt="" height="80%;" width="40%;">
+            <p>$ 24,99<p>
+
+
+<div class="card">
+    
+</div>            
+
+
+
+
+
+
+
+    </div>
+
+    
+    </div>
+
+
+
+
+    </div>
+
+
+</section>
+
+</main>
+
+<footer style="background-color: rgb(248, 232, 143); height: 20vh;display: flex;align-items: center;justify-content: center;"><!-- Footer, é o rodapé da página-->
+    <nav style="display: flex;justify-content: center;align-items: center;">
+       <a href=""><button class="btnfooter"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/>
+         Instagram</button></a>
+        <a href=""><button class="btnfooter"><img width="48" height="48" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"/>
+            Tiktok</button></a>
+        <a href=""><button class="btnfooter"><img width="48" height="48" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/>
+            X</button></a> 
+
+    </nav>
+
+
+</footer> 
+
+
+
+</body>
+</html>
